@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sumanth | Developer Profile</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        section h2 {
+            color: #172554;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        #skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            list-style: none;
+        }
+
+        #skills li {
+            background-color: #dbeafe;
+            color: #172554;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        article {
+            border-left: 4px solid #172554;
+            padding: 15px 20px;
+            margin-bottom: 18px;
+            background-color: #f8fafc;
+        }
+
+        article h3 {
+            margin-bottom: 5px;
+            color: #172554;
+        }
+
+        .contact-info {
+            margin-bottom: 25px;
+        }
+
+        .contact-info p {
+            margin: 8px 0;
+        }
+
+        form {
+            margin-top: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #172554;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #1e3a8a;
+        }
+
+        footer {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            section {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Hi, I'm Sumanth 👋</h1>
+        <p>Student | Aspiring Web Developer | Tech Enthusiast</p>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- About Me -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                Hello! I'm Sumanth, a student who is passionate about
+                technology and web development. I enjoy learning new
+                technologies and building useful projects.
+            </p>
+
+            <br>
+
+            <p>
+                I am currently improving my skills in HTML, CSS,
+                JavaScript and programming. My goal is to become a
+                skilled developer and create innovative solutions.
+            </p>
+        </section>
+
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Git & GitHub</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <article>
+                <h3>💡 MCQ Quiz Website</h3>
+                <p>
+                    A quiz website where users can answer multiple-choice
+                    questions and view their results.
+                </p>
+            </article>
+
+            <article>
+                <h3>👨‍💻 Developer Profile</h3>
+                <p>
+                    A personal developer profile page created using
+                    HTML and CSS to showcase my skills and projects.
+                </p>
+            </article>
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <div class="contact-info">
+                <p>📧 <strong>Email:</strong>nn25aim124@nmamit.in</p>
+                <p>💻 <strong>GitHub:</strong>sumanth-l-shetty</p>
+                <p>🔗 <strong>LinkedIn:</strong>https://www.linkedin.com/in/sumanth-shetty-7932a5375</p>
+            </div>
+
+            <h3>Send Me a Message</h3>
+
+            <form>
+
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Sumanth | Developer Profile</p>
+    </footer>
+
+</body>
+</html>
