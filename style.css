@@ -1,0 +1,357 @@
+/* =========================
+   RESET & BASIC STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER & NAVIGATION
+========================= */
+
+header {
+    background: linear-gradient(135deg, #172554, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #dbeafe;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background: white;
+    color: #172554;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    background: white;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    /* CSS Box Model */
+    border: 1px solid #e5e7eb;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+section h2 {
+    color: #172554;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+#about p {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+#skills ul {
+    list-style: none;
+
+    /* Flexbox */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#skills li {
+    background: #dbeafe;
+    color: #172554;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+#skills li:hover {
+    background: #2563eb;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#projects article {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 5px solid #2563eb;
+    border-radius: 10px;
+
+    padding: 22px;
+    margin-bottom: 0;
+
+    transition: all 0.3s ease;
+}
+
+#projects article:last-child {
+    margin-bottom: 0;
+}
+
+#projects article:hover {
+    transform: translateX(6px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+#projects h3 {
+    color: #172554;
+    margin-bottom: 8px;
+    font-size: 21px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-info {
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #172554;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-family: inherit;
+
+    outline: none;
+
+    transition: border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 13px 28px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #172554;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    #projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        padding: 45px 15px 30px;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    main {
+        margin-top: 25px;
+    }
+
+    section {
+        padding: 25px;
+    }
+}
+
+
+/* Mobile phones */
+@media (max-width: 480px) {
+
+    #projects {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav a {
+        width: 100%;
+        padding: 8px;
+    }
+
+    main {
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    #skills ul {
+        flex-direction: column;
+    }
+
+    #skills li {
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+    }
+}
